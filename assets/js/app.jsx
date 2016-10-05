@@ -28,7 +28,6 @@ var NoteEditor = React.createClass({
     handleNoteAdd() {
         let colors = ['#16a085', '#27ae60', '#2980b9', '#2c3e50', '#c0392b'];
         let randomColor = colors[Math.floor((Math.random() * colors.length - 1) + 1)];
-        console.log(randomColor); 
         var newNote = {
             text: this.state.text,
             color: randomColor,
